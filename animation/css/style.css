@@ -1,0 +1,91 @@
+html,body{margin: 0;padding: 0;}
+*{box-sizing: border-box;}
+img {max-width: 100%;}
+
+body {
+	font-family: "open sans", arial, sans-serif;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+@keyframes slide {
+	0%  {opacity: 0;
+	 	transform: translateX(0%);
+	 }
+    20%  {opacity: 0.25;
+	 	transform: translateX(-10%);
+	}
+	40%  {opacity: 0.75;
+	 	transform: translateX(-30%);
+	 }
+	60%  {opacity: 1;
+	 	transform: translateX(-30%);
+	 }
+	80%  {opacity: 0.75;
+	 	transform: translateX(-60%);
+	 }
+	100%  {opacity: 0;
+	 	transform: translateX(-100%);
+	 }
+}
+
+
+h1 {
+	margin: 25px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	font-family: georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-align: center;
+	animation: title 10s ease infinite;
+
+}
+.wrap {
+	margin: auto;
+	max-width: 1000px;
+	box-sizing: border-box;
+}
+.col {
+	float: left;
+	width: 33%;
+	padding: 15px;
+	position: relative;
+}
+.thumb {
+	padding: 10px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	}
+.thumb img {
+	vertical-align: middle;
+	opacity: 1;
+	transition: opacity 0.5s linear, max-width 1s linear;
+
+}
+.thumb:hover img {
+	opacity: 0.5;
+	max-width: 70%;
+}
+.thumb1:hover {
+	transform: translate(0, -5px);
+	box-shadow: opx 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#footer {
+	text-align: right;
+	font-size: 18px;
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	text-transform: capitalize; 
+	margin: 15px;
+	color: red;
+	animation: slide 6s linear infinite;
+
+}

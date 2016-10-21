@@ -1,0 +1,6 @@
+b.money::before {
+	content: "học phí ";
+}
+b.money::after {
+	content: "VND";
+}

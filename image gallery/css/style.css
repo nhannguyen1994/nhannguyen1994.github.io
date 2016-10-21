@@ -1,0 +1,91 @@
+
+
+image {
+	width: 300px;
+}
+#menu a {
+	font-size: 20px;
+	color: #55acee;
+	text-decoration: none;
+	border-top-width: 5px;
+}
+
+#menu a:hover, #menu a.active {
+	color: black;
+}
+
+.content .product{
+	max-width: 300px;
+	float: left;
+	margin: 10px;
+	padding: 15px;
+}
+
+.content{
+	padding-left: 20px;
+
+}
+.product {
+	border-color: #76a7fa;
+}
+ul{
+	list-style-type: none;
+}
+ul li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.detail h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.about h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.post h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh4 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh5 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh5 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh6 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh7 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh8 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh9 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh10 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+

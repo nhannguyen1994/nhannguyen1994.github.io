@@ -1,0 +1,166 @@
+
+img {
+		max-width: 100%;
+}
+#menu a:hover, #menu a.active {
+	color: black;
+}
+#menu {
+	position: absolute;
+	height: 100%;
+	background-color: #cccccc;
+	width: 150px;
+	left: 10px;
+}
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#menu ul li {
+	line-height: 2.9em;
+	height: 2.9em;
+
+}
+.menu ul li a {
+	display: block;
+	padding: 0 1 em;
+	border-bottom: 1px solid  #cccccc; 
+}
+.content .product{
+	max-width: 250px;
+	
+}
+.detail{
+	position: relative;
+	left: 250px;
+}
+.about {
+	position: relative;
+	left: 250px;
+}
+.anh3 {
+	position: relative;
+	left: 250px;
+}
+.anh4 {
+	position: relative;
+	left: 250px;
+}
+.anh5 {
+	position: relative;
+	left: 250px;
+}
+.anh6 {
+	position: relative;
+	left: 250px;
+}
+.anh7 {
+	position: relative;
+	left: 250px;
+}
+.anh8 {
+	position: relative;
+	left: 250px;
+}
+.anh9 {
+	position: relative;
+	left: 250px;
+}
+.anh10{
+	position: relative;
+	left: 250px;
+}
+.product{
+	float: left;
+	width: 30%;
+	padding: 20px;
+}
+.image{
+	display:inline-block;
+	}
+.content{
+	padding-left: 150px;
+	position:relative;
+	left: 0;
+	width: 100%;
+	
+	}
+ul{
+	list-style-type: none;
+}
+ul li{
+	
+	padding-left: 5px;
+	padding-right:5px;
+	padding:10px;
+}
+#top {
+	
+    position: fixed;
+    bottom:20px;
+    right: 5px;
+}
+.avatar {
+	width: 100px;
+	position: absolute;
+	top:80px;
+}
+.avatar img {
+	border-radius: 50%;
+}
+
+.detail h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+
+}
+.about h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh3 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh4 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh5 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh5 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh6 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh7 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh8 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh9 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh10 h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+

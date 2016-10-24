@@ -1,0 +1,159 @@
+img {
+	max-width: 100%;
+	height: 250px;
+}
+.image {
+	width: 300px;
+}
+#menu a:hover, #menu a.active {
+	color: black;
+}
+.menu {
+	padding-top: 20px;
+	overflow: hidden;
+
+}
+#menu {
+	text-align: center;
+}
+#menu a {
+	display: block;
+	padding: 15px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	background:#0082ff;
+	border: 1px solid #5197ff;
+	text-align: center;
+}
+#menu ul li {
+	position: relative;
+	float: left;
+
+}
+#menu li ul li {
+	width: 102px;
+	margin: 0;
+	padding: 0;
+}
+#menu li ul {
+	position: absolute;
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+#menu ul ul ul {
+	margin: 0 102px; 
+    top: 0px;       
+}
+#menu a:hover {
+    background: #5197FF;
+    
+}
+#menu li:hover ul ul,
+#menu li:hover ul ul ul {
+    display: none;
+} 
+#menu li:hover ul,
+#menu li li:hover ul,
+#menu li li li:hover ul {
+    display: block;
+}
+li {
+	display: list-item;
+	text-align:-webkit-match-parent;
+}
+.content .product {
+	max-width: 300px;
+}
+.product {
+	float: left;
+	width: 33%;
+	padding: 56px;
+}
+ .image {
+	display:inline-block;
+	
+}
+.content {
+	padding-left: 20px;
+
+	}
+#menu ul {
+	list-style-type: none;
+	position: relative;
+    list-style:  none;
+    line-height: 28px;
+}
+ul li {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.detail h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.about h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh3 h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh4 h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh5 h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh5 h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.anh6 h2 { 
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+@keyframes slide {
+	0%  {opacity: 0;
+	 	transform: translateX(0%);
+	 }
+    20%  {opacity: 0.25;
+	 	transform: translateX(-10%);
+	}
+	40%  {opacity: 0.75;
+	 	transform: translateX(-30%);
+	 }
+	60%  {opacity: 1;
+	 	transform: translateX(-40%);
+	 }
+	80%  {opacity: 0.75;
+	 	transform: translateX(-60%);
+	 }
+	100%  {opacity: 0;
+	 	transform: translateX(-100%);
+	 }
+}
+#footer {
+	text-align: right;
+	font-size: 18px;
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+	text-transform: capitalize; 
+	margin: 15px;
+	color: red;
+	animation: slide 6s linear infinite;
+
+}
+
+
+
+
+
+
+
+

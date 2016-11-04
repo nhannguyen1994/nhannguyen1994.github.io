@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script>
+
+//bài 1
+document.write("<h1>bài 1: </h1>");
+function giai_thua(n) {
+var k=1;
+for(i=1;i<=n;i++) {
+k*=i;
+}
+return k;
+}
+document.write(giai_thua(5));
+//bài 2
+document.write("<h1>bài 2: </h1>");
+function dao_chuoi(s) {
+var arr=s.split("");
+var res= arr.reverse();
+var n=res.join("");
+return n;
+}
+document.write(dao_chuoi("hello"));
+//baif 3
+document.write("<h1>bài 3: </h1>");
+function chuoi(n) {
+for ( var i=1;i<=10;i++) {
+if (i==10) {
+document.write("123");
+}
+else
+document.write("123" + "-"); 
+}
+}
+
+//bài 4
+document.write("<h1>bài 4: </h1>");
+function hoc_vien(ten) {
+var ten=["dinh","ba","quan","anh"];
+ten[0],ten[1],ten[2],ten[3];
+document.write(ten);
+ten.sort();
+document.write("<br>");
+document.write(ten);
+}
+
+//bài 5
+document.write("<h1>bài 5: </h1>");
+function tang_gia_tri (arr) {
+var arr=[1,2,3];
+arr[0],arr[1],arr[2];
+document.write(arr);
+for(i=0;i<arr.length;i++){
+arr[i]=arr[i]*2;
+}
+
+document.write("<br>");
+document.write(arr);
+}
+
+//bài 6
+document.write("<h1>bài 6: </h1>");
+function so_du(arr) {
+var arr=[5,7,9];
+arr[0],arr[1],arr[2];
+document.write(arr);
+for(i=0;i<arr.length;i++){
+arr[i]=arr[i]%2;
+}
+document.write("<br>");
+document.write(arr);
+}
+
+
+
+</script>
+</body>
+</html>

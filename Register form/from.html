@@ -1,0 +1,120 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<form action="xulydangki.html" method="post">
+	<table width="400" border="2" cellpadding="5" align="center">
+		<tr>
+			<th colspan="2">ĐĂNG KÝ TÀI KHOẢN</th>
+		</tr>
+		<tr>
+			<td>Full name</td>
+			<td>
+				<input type="text" name="fname" size="30" placeholder="Nhập fulname">
+			</td>
+		</tr>
+		<tr>
+			<td>Username</td>
+			<td>
+				<input type="text" name="user" size="30" placeholder="Nhập tên">
+			</td>
+		</tr>
+
+		<tr>
+			<td>Password</td>
+			<td>
+				<input type="text" name="password" size="30" placeholder="Nhập mật khẩu">
+			</td>
+		</tr>
+		<tr>
+			<td>Nhập lại password</td>
+		
+			<td>
+				<input type="passwword" name="repass" size="30" placeholder="Nhập lại mật khẩu">
+			</td>
+		</tr>
+		<tr>
+			<td>Giới tính</td>
+			<td>
+				<label>
+					<input type="radio" name="gioitinh" id="nam"> Nam
+				</label>
+
+				<label>
+					<input type="radio" name="gioitinh" id="nu"> nữ
+				</label>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td>Ngày sinh</td>
+			<td>
+				<select name="day">
+					<option value="ngay1">Ngày 1</option>
+					<option value="ngay2">Ngày 2</option>
+					<option value="ngay3">Ngày 3</option>
+				</select>
+
+				<select name="month">
+					<option value="thang1">Tháng 1</option>
+					<option value="thang2">Tháng 2</option>
+					<option value="thang3">Tháng 3</option>
+				</select>
+
+				<select name="year">
+					<option value="nam2015">Năm 2015</option>
+					<option value="nam2014">Năm 2014</option>
+					<option value="nam2013">Năm 2013</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Địa chỉ</td>
+			<td>
+				<textarea col="20"></textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Avatar</td>
+			<td>
+				<input type="file" name="avarta"> 
+			</td>
+		</tr>
+
+		<tr>
+			<td>Sở thích</td>
+			<td>
+				<label>
+				<input type="checkbox" name="xemphim"> Xem phim
+				</label>
+
+				<label>
+				<input type="checkbox" name="thethao"> Thể thao
+				</label>
+
+				<label>
+				<input type="checkbox" name="web"> Web
+				</label>
+			</td>
+
+		</tr>
+
+		<tr>
+			<td colspan="2" align="center">
+				<input type="reset" name="reset" value="Reset"> &nbsp;&nbsp
+				<input type="submit" name="submit" value="OK">
+			</td>
+		</tr>
+
+	</table>	
+	
+	</form>
+
+</body>
+</html>

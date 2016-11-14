@@ -1,4 +1,6 @@
-
+h1 {
+	text-align: center;
+}
 .btn {
 	width: 40px;
 	height: 32px;
@@ -10,7 +12,7 @@
 }
 table {
 	background-color: #808080;
-	margin: 150px auto;
+	margin: 100px auto;
 }
 
 	

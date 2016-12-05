@@ -1,0 +1,29 @@
+h1 {
+	text-align: center;
+	color: green;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+th {
+	  cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:hover {
+	background-color: #0000FF;
+}

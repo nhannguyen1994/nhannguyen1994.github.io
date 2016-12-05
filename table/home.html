@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="content-type" content="text/html;charset=Windows-1252">
+      <title>Tạo bảng dữ liệu, sắp xếp dữ liệu</title>
+      
+      <script type="text/javascript">
+        var people, asc1 = 1,
+            asc2 = 1,
+            asc3 = 1;
+            asc4 = 1;
+            asc5 = 1;
+        window.onload = function () {
+            people = document.getElementById("people");
+        }
+
+        function sort_table(tbody, col, asc) {
+            var rows = tbody.rows,
+                rlen = rows.length,
+                arr = new Array(),
+                i, j, cells, clen;
+            // fill the array with values from the table
+            for (i = 0; i < rlen; i++) {
+                cells = rows[i].cells;
+                clen = cells.length;
+                arr[i] = new Array();
+                for (j = 0; j < clen; j++) {
+                    arr[i][j] = cells[j].innerHTML;
+                }
+            }
+            // sort the array by the specified column number (col) and order (asc)
+            arr.sort(function (a, b) {
+                return (a[col] == b[col]) ? 0 : ((a[col] > b[col]) ? asc : -1 * asc);
+            });
+            // replace existing rows with new rows created from the sorted array
+            for (i = 0; i < rlen; i++) {
+                rows[i].innerHTML = "<td>" + arr[i].join("</td><td>") + "</td>";
+            }
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>Sản phẩm</h1>
+<table>
+  <thead>
+    <tr>
+      <th onclick="sort_table(people, 0, asc1); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1;asc5 = 1">Ảnh sản phẩm</th>
+      <th onclick="sort_table(people, 1, asc2); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1;asc5 = 1">Tên sản phẩm</th>
+      <th onclick="sort_table(people, 2, asc3); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1;asc5 = 1">Mã sản phẩm</th>
+      <th onclick="sort_table(people, 3, asc4); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1;asc5 = 1">Gía tiền(VND)</th>
+      <th onclick="sort_table(people, 4, asc5); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1;asc5 = 1">Số lượng</th>
+    </tr>
+  </thead>
+  <tbody id="people">
+    <tr>
+      <td><img src="img/anh1.jpg"></td>
+      <td>Toyota-Innova</td>
+      <td>T01</td>
+      <td>793.000.000</td>
+      <td>5</td>
+    </tr>
+
+    <tr>
+      <td><img src="img/anh2.jpg"></td>
+      <td>Vios 1.3J</td>
+      <td>T02</td>
+      <td>548.000.000</td>
+      <td>6</td>
+    </tr>
+
+    <tr>
+      <td><img src="img/anh3.jpg"></td>
+      <td>Toyota Innova số sàn</td>
+      <td>T03</td>
+      <td>710.000.000</td>
+      <td>10</td>
+    </tr>
+
+    <tr>
+      <td><img src="img/anh4.jpg"></td>
+      <td>Toyota Altis 1.8 số sàn MT</td>
+      <td>T04</td>
+      <td>757.000.000</td>
+      <td>3</td>
+    </tr>
+
+    <tr>
+      <td><img src="img/anh5.jpg"></td>
+      <td>Fortuner 2.5 G 4x2 máy dầu MT</td>
+      <td>T05</td>
+      <td>892.000.000</td>
+      <td>5</td>
+    </tr>
+
+    <tr>
+      <td><img src="img/anh6.jpg"></td>
+      <td>Toyota Camry 2.5G 2015 2016</td>
+      <td>T06</td>
+      <td>1.214.000.000</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+     <title>Soulmate</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <link rel="stylesheet" href="ism/css/my-slider.css"/>
+     <script src="ism/js/ism-2.2.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <style type="text/css">
+
+
+       .thumbnail {
+         text-align: center;
+
+       }
+       .username {
+         text-transform: uppercase;
+         font-size: 26px;
+
+       }
+       .username a {
+         text-decoration: none;
+         color:#561514;
+
+       }
+       .user_info {
+         font-size: 20px;
+       }
+       .user_info span, .percentage span {
+         padding: 2px;
+       }
+
+
+       .thumbnail a img {
+         border-radius: 5px;
+         overflow: hidden;
+         height: 200px;
+         width: 200px;
+         margin: 20px auto;
+
+         -webkit-box-shadow: 5px 5px 5px #111;
+         box-shadow: 5px 5px 5px #111;
+       }
+       .grow img {
+
+         -webkit-transition: all 1s ease;
+         -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+         -ms-transition: all 1s ease;
+         transition: all 1s ease;
+       }
+
+       .grow img:hover {
+         -moz-transform: scale(1.1);
+         -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+       }
+
+       .banner_ad {
+         position: relative;
+         top: 50px;
+         text-align: center;
+         background-color: rgba(78, 6, 6, 0.54);
+         margin-bottom: 20px;
+
+       }
+       .banner_ad button, h3 {
+         display: inline-block;
+       }
+
+       .banner_ad button {
+         margin-bottom: 10px;
+         margin-left: 10px;
+
+       }
+
+       #view_more {
+         float: right;
+       }
+
+    </style>
+</head>
+
+<body>
+ <header class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="brand" href="home.html">SOUL</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="browse_matches.html">Browse Matches</a></li>
+            <li><a href="#">Matching Quiz</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="trang_chinh.html"><i class="fa fa-users" aria-hidden="true"></i>News Feed</a></li>
+            <li><a href="message.html"><i class="fa fa-comments" aria-hidden="true"></i>Messages</a></li>
+            <li><a href="user_profile.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+            <li><a href="user_profile.html"><img src="img/profile.jpg" class="img-circle img-responsive" alt="" style="width: 50px;"></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<!-- <div class="container-fluid banner_ad">
+   <h3>Create your Free Profile and meet your Match! </h3>
+   <button type="button" class="btn btn-default" onclick="location.href = 'webhenho1/dang_ki.html';"> <i class="glyphicon glyphicon-pencil"></i>Sign Up for Free</button>
+</div> -->
+
+<!-- Click on these profile, Sign up modal pops up  -->
+<div class="container-fluid center-block" style="margin-top: 100px; background-color:#b0d8f6; color: #561514;">
+  <h2 class="ad text-center"><i class="glyphicon glyphicon-check" style="color:#561514;"></i>   Find your Soulmate</h2>
+</div>
+<section class="container results">
+<!--    <h1> These souls are waiting for you</h1> -->
+   <div class="row">
+     <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class ="thumbnail grow">
+         <a href="user_public_profile.html"><img class="img-responsive" src="img/user.jpg" alt="" title=""/></a>
+         <div class="profile_info">
+           <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+           <div class="user_info">
+             <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+         </div>
+     </div>
+     <div class="percentages">
+        <span class="percentage">77%</span><span class="percentage_label">Match</span>
+    </div>
+    <p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+   <div class ="thumbnail grow">
+     <a href="user_public_profile.html"><img class="img-responsive" src="img/user1.jpg" alt="" title=""/></a>
+     <div class="profile_info">
+       <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+       <div class="user_info">
+         <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+     </div>
+ </div>
+ <div class="percentages">
+    <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="#" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+    <div class ="thumbnail grow">
+      <a href="user_public_profile.html"><img class="img-responsive" src="img/user2.jpg" alt="" title=""/></a>
+      <div class="profile_info">
+        <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+        <div class="user_info">
+          <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+      </div>
+  </div>
+  <div class="percentages">
+     <span class="percentage">77%</span><span class="percentage_label">Match</span>
+ </div>
+ <p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class ="thumbnail grow">
+    <a href="user_public_profile.html"><img class="img-responsive" src="img/user3.jpg" alt="" title=""/></a>
+    <div class="profile_info">
+      <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+      <div class="user_info">
+        <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+    </div>
+</div>
+<div class="percentages">
+   <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+   <div class ="thumbnail grow">
+     <a href="user_public_profile.html"><img class="img-responsive" src="img/user1.jpg" alt="" title=""/></a>
+     <div class="profile_info">
+       <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+       <div class="user_info">
+         <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+     </div>
+ </div>
+ <div class="percentages">
+    <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="#" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+    <div class ="thumbnail grow">
+      <a href="user_public_profile.html"><img class="img-responsive" src="img/user2.jpg" alt="" title=""/></a>
+      <div class="profile_info">
+        <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+        <div class="user_info">
+          <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+      </div>
+  </div>
+  <div class="percentages">
+     <span class="percentage">77%</span><span class="percentage_label">Match</span>
+ </div>
+ <p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class ="thumbnail grow">
+    <a href="user_public_profile.html"><img class="img-responsive" src="img/user3.jpg" alt="" title=""/></a>
+    <div class="profile_info">
+      <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+      <div class="user_info">
+        <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+    </div>
+</div>
+<div class="percentages">
+   <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+   <div class ="thumbnail grow">
+     <a href="user_public_profile.html"><img class="img-responsive" src="img/user4.jpg" alt="" title=""/></a>
+     <div class="profile_info">
+       <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+       <div class="user_info">
+         <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+     </div>
+ </div>
+ <div class="percentages">
+    <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class ="thumbnail grow">
+    <a href="user_public_profile.html"><img class="img-responsive" src="img/user5.jpg" alt="" title=""/></a>
+    <div class="profile_info">
+      <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+      <div class="user_info">
+        <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+    </div>
+</div>
+<div class="percentages">
+   <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+   <div class ="thumbnail grow">
+     <a href="user_public_profile.html"><img class="img-responsive" src="img/user.jpg" alt="" title=""/></a>
+     <div class="profile_info">
+       <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+       <div class="user_info">
+         <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+     </div>
+ </div>
+ <div class="percentages">
+    <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class ="thumbnail grow">
+    <a href="user_public_profile.html"><img class="img-responsive" src="img/user2.jpg" alt="" title=""/></a>
+    <div class="profile_info">
+      <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+      <div class="user_info">
+        <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+    </div>
+</div>
+<div class="percentages">
+   <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+   <div class ="thumbnail grow">
+     <a href="user_public_profile.html"><img class="img-responsive" src="img/user3.jpg" alt="" title=""/></a>
+     <div class="profile_info">
+       <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+       <div class="user_info">
+         <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+     </div>
+ </div>
+ <div class="percentages">
+    <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class ="thumbnail grow">
+    <a href="user_public_profile.html"><img class="img-responsive" src="img/user4.jpg" alt="" title=""/></a>
+    <div class="profile_info">
+      <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+      <div class="user_info">
+        <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+    </div>
+</div>
+<div class="percentages">
+   <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+   <div class ="thumbnail grow">
+     <a href="user_public_profile.html"><img class="img-responsive" src="img/user5.jpg" alt="" title=""/></a>
+     <div class="profile_info">
+       <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+       <div class="user_info">
+         <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+     </div>
+ </div>
+ <div class="percentages">
+    <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+
+</div></div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class ="thumbnail grow">
+    <a href="user_public_profile.html"><img class="img-responsive" src="img/user.jpg" alt="" title=""/></a>
+    <div class="profile_info">
+      <p class="username"><a href="user_public_profile.html">Alice123</a></p>
+      <div class="user_info">
+        <span class="age">25</span><span class="dot">·</span><span class="location">Hanoi</span>
+    </div>
+</div>
+<div class="percentages">
+   <span class="percentage">77%</span><span class="percentage_label">Match</span>
+</div>
+<p><a href="javascript:void(0)" class="btn likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i>LIKE</a></p>
+</div></div>
+</div>
+
+<span id="view_more"><a href="" class="btn btn-default" role="button">View More Matches</a></span>
+
+</section>
+
+
+
+
+
+<footer class="footer-distributed">
+   <div class="footer-right">
+     <a href="#"><i class="fa fa-facebook"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+     <a href="#"><i class="fa fa-instagram"></i></a>
+ </div>
+ <div class="footer-left">
+     <p class="footer-links">
+       <a href="home.html">Home</a>
+       ·
+       <a href="blog.html">Blog</a>
+       ·
+       <a href="#">About</a>
+       ·
+       <a href="#">FAQ</a>
+       ·
+       <a href="#">Contact</a>
+   </p>
+   <p>SOUL Co. &copy; 2016</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+   $('.likebtn').click( function(){
+     $(this).find('i').toggleClass('glyphicon glyphicon-star-empty').toggleClass('glyphicon glyphicon-star liked-icon');
+ });
+</script>
+</body>
+</html>

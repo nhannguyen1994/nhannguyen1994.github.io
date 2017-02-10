@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="user_profile.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+  <header class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="brand" href="home.html">SOUL</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="browse_matches.html">Browse Matches</a></li>
+            <li><a href="quiz.html">Matching Quiz</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="trang_chinh.html"><i class="fa fa-users" aria-hidden="true"></i>News Feed</a></li>
+            <li><a href="message.html"><i class="fa fa-comments" aria-hidden="true"></i>Messages</a></li>
+            <li><a href="user_profile.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+            <li><a href="user_profile.html"><img src="img/profile.jpg" class="img-circle img-responsive" alt="" style="width: 35px;"></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="banner">
+      <!-- <img class="img-responsive" src="img/banner.jpg" alt="banner photo" style="width: 100%; height: 320px; background-position: center;">
+      <a href="" style="left:initial; right: 5%; bottom: 10px; color: #E53935; background-color: transparent;"><i id="changeAvatar" class="fa fa-pencil fa-lg" aria-hidden="true" style="color:#E53935;" ></i></a> -->
+
+    </div>
+  </header>
+
+
+
+
+  <div class="container user-info-wrap">
+    <div class="col-xs-12 col-sm-4">
+      <div class="user-img">
+        <img src="img/profile.jpg" class="img-circle img-responsive center-block" alt="profile photo">
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <div class="user-info">
+        <h2>Russel Howard</h2>
+        <p>32</p>
+        <p>London, UK</p>
+        <button class="btn btn-default">
+          Change Info <i style="margin-left:5px;" class="fa fa-pencil" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+<div class="container">
+  <h2>Profile</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#about">About Me</a></li>
+    <li><a data-toggle="tab" href="#gallery">Image Gallery</a></li>
+    <li><a data-toggle="tab" href="#settings">Settings</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- About me Tab -->
+    <div id="about" class="tab-pane fade in active">
+      <h3>About Me</h3>
+      <p>Tell us more about yourself.</p>
+        <h4 class="profile-title">My self summary</h4>
+        <textarea class="form-control">The role model of many idol celebrities</textarea>
+
+        <h4 class="profile-title">What I am doing with my life</h4>
+        <textarea class="form-control">I debuted in 2007 as a member of South Korean girl group Girls' Generation under S.M. Entertainment, and have further participated in its subgroup TTS as well as S.M Entertainment's ballad group SM the Ballad. Aside from group activities, I have also recorded tracks for various television dramas and movies as well as commercial films (CFs).</textarea>
+        <h4 class="profile-title">I am really good at</h4>
+        <textarea class="form-control">Entertainment: Singing, Dancing </textarea>
+        <h4 class="profile-title">My interest</h4>
+        <textarea class="form-control">Cooking, Baking, Dancing, Singing</textarea>
+        <h4 class="profile-title">What I am looking for?</h4>
+        <textarea class="form-control">To be honest I'm here only to look at people - I'm the type that simply just want to look and enjoy - no more no less.</textarea>
+        <button id="save-settings" type="button" class="btn btn-default">Save</button>
+    </div>
+
+    <!-- Image Gallery Tab -->
+    <div id="gallery" class="tab-pane fade">
+      <h3>Image Gallery</h3>
+      <p>Looking back at your wonderful journey</p>
+      <div class="col-xs-12" style="margin-bottom: 20px;">
+        <img src="img/profile1.jpeg" alt="" class="img-responsive col-sm-4">
+        <img src="img/profile2.jpg" alt="" class="img-responsive col-sm-4">
+        <img src="img/profile3.jpg" alt="" class="img-responsive col-sm-4">
+
+      </div>
+
+    <!--Image Gallery
+      File uploader -->
+      <input id="input-id" type="file" class="file" data-preview-file-type="text" >
+    </div>
+
+    <!-- Settings Tab -->
+    <div id="settings" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>You can update your private information and security settings below.</p>
+      <div> <!-- Settings Info -->
+          <fieldset class="settings-field settings-field--username" ><label ><h3 class="settings-field-title" ><span >Username</span></h3><div class="settings-input" ><span class="typable-wrapper typable-wrapper--text" ><input class="input settings-input-field" id="" placeholder="" value="Russell123" name="username" maxlength="16" ></span></div><span class="helper-text" ><span data-reactid="26">You can change your username once a month.</span></span></label></fieldset>
+
+          <fieldset class="settings-field settings-field--email" ><label ><h3 class="settings-field-title" ><span >Email</span></h3><div class="settings-input" ><span class="typable-wrapper typable-wrapper--text" ><input class="input settings-input-field" id="" placeholder="" value="Russell123@gmail.com" name="email" ></span></div></label></fieldset>
+
+          <fieldset class="settings-field settings-field--birthday" ><h3 class="settings-field-title" ><span >Birthday</span></h3><div class="settings-select" ><label class="oknf-select settings-input-element settings-dropdown settings-dropdown--month" ><select ><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5" >May</option><option selected="" value="6" >June</option><option value="7">July</option><option value="8" >August</option><option value="9">September</option><option value="10">October</option><option value="11" >November</option><option value="12" >December</option></select></label><label class="oknf-select settings-input-element settings-dropdown settings-dropdown--day"><select><option value="1" >1</option><option value="2">2</option><option value="3" >3</option><option value="4">4</option><option value="5">5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10">10</option><option value="11" >11</option><option value="12">12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option selected="" value="16">16</option><option value="17" >17</option><option value="18" ">18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28">28</option><option value="29" >29</option><option value="30">30</option></select></label><label class="oknf-select settings-input-element settings-dropdown settings-dropdown--year" ><select ><option value="1951" >1951</option><option value="1952" >1952</option><option value="1953" >1953</option><option value="1954" >1954</option><option value="1955" >1955</option><option value="1956" >1956</option><option value="1957" >1957</option><option value="1958" >1958</option><option value="1959" >1959</option><option value="1960" >1960</option><option value="1961" >1961</option><option value="1962" >1962</option><option value="1963" >1963</option><option value="1964" >1964</option><option value="1965" ">1965</option><option value="1966" >1966</option><option value="1967" >1967</option><option value="1968" >1968</option><option value="1969" >1969</option><option value="1970">1970</option><option value="1971" >1971</option><option value="1972" >1972</option><option value="1973" >1973</option><option value="1974" >1974</option><option value="1975" >1975</option><option value="1976" >1976</option><option value="1977" >1977</option><option value="1978" >1978</option><option value="1979">1979</option><option value="1980" data-reactid="152">1980</option><option value="1981" >1981</option><option value="1982">1982</option><option value="1983" >1983</option><option value="1984" >1984</option><option value="1985" >1985</option><option value="1986" >1986</option><option value="1987" >1987</option><option value="1988" >1988</option><option value="1989" >1989</option><option value="1990" >1990</option><option value="1991" >1991</option><option value="1992">1992</option><option selected="" value="1993" >1993</option><option value="1994" >1994</option><option value="1995" >1995</option><option value="1996">1996</option><option value="1997" >1997</option><option value="1998">1998</option></select></label></div></fieldset>
+
+          <fieldset class="settings-field settings-field--location" ><h3 class="settings-field-title" ><span >Location</span></h3><div class="settings-select" ><label class="oknf-select" ><select ><option value="US">United States</option><option value="GB">United Kingdom</option><option value="CA">Canada</option><option value="AU">Australia</option><option value="SG">Singapore</option><option value="IE">Ireland</option><option value="NZ">New Zealand</option><option value="PH">Philippines</option><option value="SE">Sweden</option><option value="FI">Finland</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE>Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF" data-reactid="217">Burkina Faso</option><option value="MM">Burma</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CK" >Cook Islands</option><option value="CR" >Costa Rica</option><option value="CI" >Cote d'Ivoire</option><option value="HR" >Croatia</option><option value="CU" >Cuba</option><option value="CY" >Cyprus</option><option value="CZ" >Czech Republic</option><option value="CD" >Democratic Republic of the Congo</option><option value="DK" >Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO" >Dominican Republic</option><option value="TL">East Timor</option><option value="EC" >Ecuador</option><option value="EG" >Egypt</option><option value="SV" >El Salvador</option><option value="GQ" >Equatorial Guinea</option><option value="ER" >Eritrea</option><option value="EE" data-reactid="250">Estonia</option><option value="ET" >Ethiopia</option><option value="EU" >Europa Island</option><option value="FK" >Falkland Islands</option><option value="FO" >Faroe Islands</option><option value="FJ" >Fiji</option><option value="FR" >France</option><option value="GF" >French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern and Antarctic Lands</option><option value="GA" >Gabon</option><option value="GM" >Gambia</option><option value="GZ" >Gaza Strip</option><option value="GE" data-reactid="263">Georgia</option><option value="DE" >Germany</option><option value="GH" >Ghana</option><option value="GI">Gibraltar</option><option value="GO" >Glorioso Islands</option><option value="GR" >Greece</option><option value="GL" >Greenland</option><option value="GD" >Grenada</option><option value="GP">Guadeloupe</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JN">Jan Mayen</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="JU">Juan de Nova Island</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia Federal States</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NM">No Man's Land</option><option value="NF">Norfolk Island</option><option value="KP">North Korea</option><option value="NO">Norway</option><option value="OS">Oceans</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard</option><option value="SZ">Swaziland</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option selected="" value="VN">Vietnam</option><option value="WF">Wallis and Futuna</option><option value="PS">West Bank</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select></label></div>
+          <div class="settings-field-input"><span><div class="settings-input"><span class="oknf-typable-wrapper oknf-typable-wrapper--text"><input class="oknf-input settings-input-field" id="" placeholder="City" value="Hanoi" name="location"></span></div></span></div></fieldset>
+
+
+          <h2 class="settings-title">Security</h2>
+
+          <fieldset class="settings-field settings-field--password"><h3 class="settings-field-title" ><span>Change your password</span></h3><div class="settings-input"><span class="typable-wrapper--password"><input type="password" class="settings-input-field" id="" placeholder="New password" value="" name="passwordNew"></span></div></fieldset>
+
+
+          <h2 class="settings-title">Notifications</h2>
+
+          <div class="settings-table settings-table--2column">
+
+            <div class="settings-table-row settings-table-row-title">
+              <p>Would you like to receive notifications via email?</p>
+            </div>
+
+            <div class="settings-table-row oknf settings-table-row--messages">
+              <div class="settings-table-cell">
+                <div class="settings-table-description">New messages</div>
+              </div>
+              <div class="settings-table-cell settings-table-cell--right">
+                <label class="settings-checkbox"><input type="checkbox" id="" value="on"><span class="checkbox-decoration"></span></label>
+              </div>
+            </div>
+
+            <div class="settings-table-row oknf settings-table-row--likes">
+              <div class="settings-table-cell">
+                <div class="settings-table-description">New likes</div>
+              </div>
+              <div class="settings-table-cell settings-table-cell--right">
+                <label class="settings-checkbox"><input type="checkbox" id="" value="on"><span class="checkbox-decoration"></span></label>
+              </div>
+            </div>
+
+            <div class="settings-table-row oknf settings-table-row--mutualLikes">
+              <div class="settings-table-cell">
+                <div class="settings-table-description">Mutual likes</div>
+              </div>
+              <div class="settings-table-cell settings-table-cell--right">
+                <label class="settings-checkbox"><input type="checkbox" id="" value="on"><span class="checkbox-decoration"></span></label>
+              </div>
+            </div>
+
+            <div class="settings-table-row oknf settings-table-row--visitors">
+              <div class="settings-table-cell">
+                <div class="settings-table-description">New visitors</div>
+              </div>
+              <div class="settings-table-cell settings-table-cell--right">
+                <label class="settings-checkbox"><input type="checkbox" id="" value="on"><span class="checkbox-decoration"></span></label>
+              </div>
+            </div>
+
+            <div class="settings-table-row oknf settings-table-row--newsletter">
+              <div class="settings-table-cell">
+                <div class="settings-table-description">Weekly matches</div>
+              </div>
+              <div class="settings-table-cell settings-table-cell--right">
+                <label class="settings-checkbox"><input type="checkbox" id="" value="on"><span class="checkbox-decoration"></span></label>
+              </div>
+            </div>
+
+          </div> <!-- end of Settings Table -->
+        <button id="save-settings" type="button" class="btn btn-default">Save</button>
+      </div> <!-- end of Settings Info -->
+    </div> <!-- end of Settings Tab -->
+  </div> <!-- end of Tab Content -->
+</div> <!-- end of container -->
+<!-- </div> -->
+
+
+
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="home.html">Home</a>
+                ·
+                <a href="blog.html">Blog</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">FAQ</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+            <p>SOUL Co. &copy; 2016</p>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

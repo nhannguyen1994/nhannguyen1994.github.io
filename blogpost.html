@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soulmate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+    h1 {
+        text-transform: capitalize;
+        font-size: 28px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.8);
+        font-style: oblique;
+        margin-top: 50px;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    section {
+        box-shadow: none;
+    }
+    .thumbnail {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    .tags {
+        color: #995490;
+        font-style: italic;
+    }
+
+    #pageNav {
+        text-align: center;
+    }
+    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #E53935;
+    border-color: #E53935;
+    }
+    .pagination>li>a, .pagination>li>span,.pagination>li>a:hover, .pagination>li>span:hover,.pagination>li>a:visited, .pagination>li>span:visited {
+        color:#E53935 ;
+    }
+
+    .post-comslikes a {
+        color: #E53935;
+    }
+    .post-title, .post-title a {
+        text-transform: capitalize;
+        font-size: 18px;
+        color: #E53935;
+        margin: 50px 0;
+
+    }
+    .love-it-wrapper {
+        display: inline;
+        padding-left: 10px;
+    }
+
+    /*Blog post style*/
+    h5 {
+        font-size: 20px;
+        font-weight: 700;
+        color:rgba(0, 0, 0, 0.8);
+
+    }
+    dt {
+        display: none;
+
+    }
+    dd {
+        padding:15px;
+    }
+    .entry-meta {
+        text-align: center;
+        padding: 30px;
+
+    }
+    .full-post {
+        border-right: 1px solid rgba(128, 128, 128, 0.55);
+        border-left: 1px solid rgba(128, 128, 128, 0.55);
+    }
+
+    .full-post img {
+        margin: 30px auto 20px;
+    }
+    .ad {
+        margin-top: 20px;
+        display: block;
+        background-color:#E53935;
+        color: white;
+        padding: 5px;
+    }
+
+    .quick-search {
+        margin-top: 20px;
+
+    }
+
+    @media (max-width: 500px){
+        dd {
+            padding:0;
+        }
+        .entry-meta {
+            padding: 0;
+        }
+        section {
+            margin:0;
+        }
+
+    }
+
+
+
+</style>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button id="toggle-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html" id="brand">SOUL</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <button type="button" class="btn btn-default navbar-btn" onclick="location.href = 'sign_up.html';">Join Us </button>
+            <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal" onclick="location.href = 'sign_in.html';">Sign In</button>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+<section class="container">
+    <h1>The Soulmate Blog</h1>
+    <h2>Where you can find love advice and tip for a blossoming relatonship</h2>
+</section>
+
+<div class="container">
+<div class="entry-meta col-md-3 col-xs-12">
+    <dl>
+        <dt>Author</dt>
+        <dd class="author">Saskia Nelson</dd>
+        <dt>Date</dt>
+        <dd class="date">Tue, 27 Sep 2016</dd>
+
+        <dt>Share</dt>
+        <dd class="share">
+            <!-- AddThis Custom -->
+            <div class="post-social">
+                <div class="post-comslikes text-sm">
+                    <a href=""><i class="fa fa-comment"></i> 0</a>
+                    <div class="love-it-wrapper"><a href="#" class="love-it"><i class="fa fa-thumbs-up"></i>5</a></div>
+                    </div>
+            </div>
+            <!-- End AddThis Custom -->
+        </dd>
+    </dl>
+
+</div>
+
+<div class="full-post col-md-6 col-xs-12">
+    <h3 class="text-center">The 8 Dating Profile Photos No One Wants to See</h3>
+    <img src="img/blogpost.jpg" class="img-responsive center-block">
+    <p>Anyone who’s spent any time in the online dating world has no doubt seen a stream of dodgy dating profile photos – you know, the ones that make you crack up, cringe and/or send to your friend before instantly deciding this person isn’t for you. So how do you avoid these pitfalls in your own photos? Here are some of the absolute photo no-nos.</p>
+    <h5>1.Disco inferno</h5>
+    <p>Seems obvious, but you’d be surprised how many people think it’s a good idea to use a photo of themselves half way through a night on the Jagerbombs. But let’s face it, you rarely look your best when your eyes are barely pointing the same way. You might think a photo of you robot dancing makes you look good fun but trust us, drunken pics are a big dating turn off.</p>
+    <h5>2.The morning after</h5>
+    <p>Equally, avoid pics taken the next day after a big night. You in a kitchen laden with empty bottles, dressed in a onesie, still wearing last night’s make up and clutching an empty tub of Haagen-Dazs might not send the right message to potential dates. Ok, we admit we’re exaggerating a bit on this one but you get the idea.</p>
+    <h5>3.1990s nostalgia</h5>
+    <p>If your appearance hasn’t changed much, then it’s likely you can get away with a shot taken a few years ago. But if you’re delving into the past by more than that, make sure there aren’t any clues in the shot that give away just how old it is. So perhaps avoid the pic of you with the ‘Rachel’ haircut and an All Saints CD on the table next to you. We think you’ll be rumbled in no time.</p>
+    <h5>4.Striking a pose</h5>
+    <p>Don’t get us wrong – there’s a place for studio photography. But for dating photos, these type of shots run the risk of making you look like David Brent. We’ve all seen those sultry glances and cheesy poses which look staged, a bit desperate and even a tad creepy, when you want your dating pics to look natural, carefree and spontaneous.</p>
+    <h5>5.A bit of a mouthful</h5>
+    <p>You might want to show off how cultured you are with a pic of you eating in a Michelin star restaurant. Especially if you’re a foodie looking for someone to share your love of experimental cuisine with. But we all remember that shot of Ed Miliband eating a bacon sarnie and shudder. Unless you’re Nigella Lawson, it’s impossible to look sexy whilst shoving any sort of food item into your mouth. So save your gastronomic expertise for that third date instead.</p>
+    <h5>6.The gym bod</h5>
+    <p>Guys – we know you might have spent six months in the gym perfecting those pectorals, or toning those abs, and you want your date to know you’re in great shape, right? Wrong. Shots of you topless in front of the mirror send all the wrong messages and are a surefire way to make people swipe left. So stay away from mirror selfies.</p>
+    <h5>7.The globetrotter</h5>
+    <p>Unless they were taken by a pro, travel photos can have more than a whiff of cheese about them. So that pic of you pretending to hold up the Leaning Tower of Pisa, or the one of you with a giant snake around your neck? These are best left for amusing your friends on Facebook, not for trying to attract the love of your life./p>
+    <h5>8.The try hard</h5>
+    <p>It’s important to show your potential dates something about you. But be authentic. A photo of you clutching a book of Shakespeare’s Sonnets could look just a teeny bit pretentious or like you’re trying too hard. Make sure any props in your pics, like cameras, books or headphones really show what makes you tick, not just what you think makes you look appealing.</p>
+    <p>Follow Saskia Nelson on Twitter <a href="">@saskia_nelson</a></p>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+        <div class ="thumbnail">
+                <div class="caption">
+                    <p><a href="" class="tags">Dating &amp; Relationships</a></p>
+                    <h5>The Secret To Making A Long Distance Relationship Work</h5>
+                    <p>Ok, let me be brutally honest here. Without compromise, your attempt at a long distance relationship (LDR) will fail...</p>
+                    <p><a href="#" class="btn btn-default" role="button">Continue Reading</a></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6">
+        <div class ="thumbnail">
+                <div class="caption">
+                    <p><a href="" class="tags">Dating &amp; Relationships</a></p>
+                    <h5>5 Body Language Hacks To Make Women Melt At Your Feet</h5>
+                    <p>It’s the silent assassin. The ninja that kills your chances with women without you even noticing. The main reason that women aren’t into you...</p>
+                    <p><a href="#" class="btn btn-default" role="button">Continue Reading</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-md-3 col-xs-12">
+<a href="sign_up.html" class="btn btn-default" target="_blank" style="background-color: #995490; color: white; border-color: #995490; margin-top: 20px;"><i class="glyphicon glyphicon-arrow-right" style="color: white;"></i>Join now for free</a>
+
+<div class="center-block quick-search">
+        <div class="col-xs-12 col-md-12">
+        <span class="ad"><i class="glyphicon glyphicon-check" style="color: white;"></i>   Find your Soulmate</span>
+          <h2>Quick Search</h2>
+            <form method="post" action="quick_browse.html" accept-charset="UTF-8" role="form">
+             <div class="form-group">
+              <span><label>Gender</label></span>
+              <span>
+                <select name="gender">  <option value="1">Male</option>
+                <option selected="selected" value="2">Female</option>
+                </select>
+              </span>
+             </div>
+             <div class="form-group">
+              <span><label>Looking for</label></span>
+              <span>
+                <select name="gender">  <option value="1">Male</option>
+                <option selected="selected" value="2">Female</option>
+                </select>
+              </span>
+             </div>
+             <div class="form-group">
+              <span><label>Age</label></span>
+              <span>
+                <select name="age">  <option value="1">18</option>
+                <option selected="selected" value="2">19</option>
+                <option selected="selected" value="3">20</option>
+                <option selected="selected" value="4">21</option>
+                <option selected="selected" value="5">22</option>
+                <option selected="selected" value="6">23</option>
+                </select>
+              </span>
+
+              <span><label>to</label></span>
+              <span>
+                <select name="age">  <option value="1">20</option>
+                <option selected="selected" value="2">24</option>
+                <option selected="selected" value="3">26</option>
+                <option selected="selected" value="4">27</option>
+                <option selected="selected" value="5">28</option>
+                <option selected="selected" value="6">30</option>
+                </select>
+              </span>
+             </div>
+             <div class="form-group">
+              <span><label>Distance in km</label></span>
+              <span>
+                <select name="distance">  <option value="1">10</option>
+                <option selected="selected" value="2">15</option>
+                <option selected="selected" value="3">20</option>
+                <option selected="selected" value="4">30</option>
+                <option selected="selected" value="5">40</option>
+                <option selected="selected" value="6">50</option>
+                </select>
+              </span>
+
+              <span><label>around</label></span>
+              <span>
+                <select name="location">
+                <option value="1"> Viet Nam</option>
+                <option selected="selected" value="2">Ha Noi</option>
+                <option selected="selected" value="3">Ho Chi Minh City</option>
+                <option selected="selected" value="4">China</option>
+                <option selected="selected" value="5">Singapore</option>
+                <option selected="selected" value="6">Thailand</option>
+                </select>
+              </span>
+             </div>
+
+            <button type="submit" class="btn btn-default center-block">Search</button>
+          </form>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="home.html">Home</a>
+                ·
+                <a href="blog.html">Blog</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">FAQ</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+            <p>SOUL Co. &copy; 2016</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $("#myModal").modal();
+            });
+        });
+    </script>
+</body>
+</html>

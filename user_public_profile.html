@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Public profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+    .user-info-wrap {
+      border-radius: 5px;
+      box-shadow: 0 2px 5px 0 rgba(191, 61, 20, 0.53), 0 2px 10px 0 rgba(191, 61, 20, 0.38);
+      padding: 30px 0;
+    }
+
+    .user-info-wrap div {
+      margin-bottom: 10px;
+    }
+
+    .user-content {
+      margin-top: 80px;
+    }
+
+    .user-content div {
+      margin-bottom: 10px;
+    }
+
+    .profile-title {
+      margin-top: 40px;
+      text-transform: capitalize;
+      font-weight: bold
+    }
+
+    .profile-title:first-child {
+      margin-top: 0px;
+    }
+
+    #match-result {
+      margin-top: 40px;
+    }
+
+    #suggested-users {
+      margin-top: 40px;
+    }
+    .info-summary {
+      margin-bottom: 30px;
+    }
+
+    .other-users {
+      float: left;
+      width: 30%;
+      padding: 2%;
+    }
+
+    .traits {
+      float: left;
+      border: 1px solid #E53935;
+
+      border-radius: 2px;
+      padding: 10px;
+      margin: 2px;
+    }
+
+    .traits:hover {
+      box-shadow: 0 2px 5px 0 rgba(191, 61, 20, 0.53), 0 2px 10px 0 rgba(191, 61, 20, 0.28);
+    }
+
+    .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:visited {
+      background-color: white;
+      color: #E53935;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="brand" href="home.html">SOUL</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="browse_matches.html">Browse Matches</a></li>
+            <li><a href="quiz.html">Matching Quiz</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="trang_chinh.html"><i class="fa fa-users" aria-hidden="true"></i>Visitors</a></li>
+            <li><a href="message.html"><i class="fa fa-comments" aria-hidden="true"></i>Messages</a></li>
+            <li><a href="user_profile.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+            <li><a href="user_profile.html"><img src="img/profile.jpg" class="img-circle img-responsive" alt="" style="width: 35px;"></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="banner">
+      <img class="img-responsive" src="img/taeyeon_banner.jpg" alt="banner photo" style="width:100%; height: 80%;">
+    </div>
+  </header>
+
+
+
+
+  <div class="container user-info-wrap">
+    <div class="col-xs-12 col-sm-3">
+      <div class="user-img">
+        <img src="img/user3.jpg" class="img-circle img-responsive center-block" alt="">
+        <!-- <button type="button" class="btn btn-default"><i id="changeAvatar" class="fa fa-pencil" aria-hidden="true"></i>Change</button> -->
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-5">
+      <div class="user-info">
+        <h2>Taeyeon Kim</h2>
+        <p>26</p>
+        <p>Seoul, South Korea</p>
+        <a href="javascript:void(0)" class="btn btn-default likebtn" role="button"><i class="glyphicon glyphicon-star-empty"></i> LIKE</a>
+        <a href="javascript:void(0)" class="btn btn-default" role="button"><i class="glyphicon glyphicon-comment"></i> Message</a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <img src="img/user5.jpg" class="other-users img-thumbnail img-responsive center-block" alt="">
+      <img src="img/user4.jpg" class="other-users img-thumbnail img-responsive center-block" alt="">
+      <img src="img/user5.jpg" class="other-users img-thumbnail img-responsive center-block" alt="">
+
+    </div>
+  </div>
+
+
+  <div class="container user-content">
+    <div class="col-xs-12 col-sm-8">
+      <h4 class="profile-title">My self summary</h4>
+      <p>The role model of many idol celebrities</p>
+      <h4 class="profile-title">What I am doing with my life</h4>
+      <p>I debuted in 2007 as a member of South Korean girl group Girls' Generation under S.M. Entertainment, and have further participated in its subgroup TTS as well as S.M Entertainment's ballad group SM the Ballad. Aside from group activities, I have also recorded tracks for various television dramas and movies as well as commercial films (CFs).</p>
+      <h4 class="profile-title">I am really good at</h4>
+      <p>Entertainment: Singing, Dancing </p>
+      <h4 class="profile-title">My interest</h4>
+      <p>Cooking, Baking, Dancing, Singing</p>
+
+      <h4 class="profile-title">What I am looking for?</h4>
+      <p>To be honest I'm here only to look at people - I'm the type that simply just want to look and enjoy - no more no less.</p>
+
+      <div id="match-result">
+        <h4 class="profile-title">Personality</h4>
+        <div class="traits"><a href="javascript:void(0)"></a>Positive</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Not very sociable</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Hard-working</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Modern</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Fashionable</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Artistic</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Generous</div>
+        <div class="traits"><a href="javascript:void(0)"></a>Confident</div>
+      </div>
+
+    </div>
+
+
+    <div class="info-summary col-xs-12 col-sm-4">
+      <p><i class="glyphicon glyphicon-user"></i> Single, Women,</p>
+      <p><i class="glyphicon glyphicon-list-alt"></i> Asia, Singer, Speaks English and Korean</p>
+      <p><i class="glyphicon glyphicon-search"></i> Looking for men, near me, ages 25-35, for friends</p>
+
+      <div id="suggested-users">
+        <h4 class="profile-title">Suggested Profiles</h4>
+        <img src="img/user2.jpg" class="other-users img-circle img-responsive center-block" alt="">
+        <img src="img/user3.jpg" class="other-users img-circle img-responsive center-block" alt="">
+        <img src="img/user4.jpg" class="other-users img-circle img-responsive center-block" alt="">
+        <img src="img/user1.jpg" class="other-users img-circle img-responsive center-block" alt="">
+        <img src="img/user5.jpg" class="other-users img-circle img-responsive center-block" alt="">
+        <img src="img/user.jpg" class="other-users img-circle img-responsive center-block" alt="">
+        <img src="img/user4.jpg" class="other-users img-circle img-responsive center-block" alt="">
+      </div>
+    </div>
+  </div> <!-- user-content -->
+
+
+
+
+
+  <footer class="footer-distributed">
+    <div class="footer-right">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="footer-left">
+      <p class="footer-links">
+        <a href="home.html">Home</a>
+        ·
+        <a href="blog.html">Blog</a>
+        ·
+        <a href="#">About</a>
+        ·
+        <a href="#">FAQ</a>
+        ·
+        <a href="#">Contact</a>
+      </p>
+      <p>SOUL Co. &copy; 2016</p>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $('.likebtn').click( function(){
+      $(this).find('i').toggleClass('glyphicon glyphicon-star-empty').toggleClass('glyphicon glyphicon-star liked-icon');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+.user-info-wrap {
+  margin-top: 100px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(191, 61, 20, 0.33), 0 2px 10px 0 rgba(191, 61, 20, 0.18);
+  padding: 30px 0;
+}
+
+
+.settings-field {
+  margin-left: 5px;
+  margin-bottom: 10px;
+
+}
+
+.settings-title {
+  border-top: 1px solid rgba(128, 128, 128, 0.55);
+}
+
+.settings-input-field {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.settings-table-cell--right{
+  float: right;
+  margin-top: -22px;
+  margin-right: 5px;
+}
+
+#save-settings {
+  margin-top: 50px;
+  float: right;
+}

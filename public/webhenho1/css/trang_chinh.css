@@ -1,0 +1,55 @@
+
+span{
+	color: white;
+	font-weight: bold;
+
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+a {
+	color: #000000;
+}
+.search {
+	margin-top: 10px;
+}
+section {
+	padding-top: 55px;
+	padding-bottom: 75px;
+}
+
+@media(max-width: 420px){
+	a.icon2{
+		    display: inline;
+		    margin-top: 10px;
+		    float: left;
+		    padding-bottom: 10px;
+	}
+	.search{
+		    display: inline;
+		    width: 80%;
+		    float: left;
+	}
+	.container2{
+		    padding-bottom: 20px;
+	}
+@media (min-width: 768px){
+.container1 {
+
+    padding-bottom: 20px;
+}
+ .container{
+	width: 80%;
+}
+
+.carousel-inner > .item > img,.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.thumbnail {
+    padding: 0;
+}
+
+

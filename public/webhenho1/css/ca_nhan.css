@@ -1,0 +1,58 @@
+
+#place_components .component{
+	float:left;
+	}
+.view_component div{
+	overflow:hidden;
+	}
+.ow_profile_gallery_avatar_image{
+	background-image:url(../img/a.jpg );
+	}
+.ow_profile_gallery_place:hover 
+.ow_profile_gallery_btn{}
+.ow_profile_gallery_btn{}
+.pcg_avatar_approve{
+	display:none;
+	}
+.ow_avatar_console:hover 
+.pcg_avatar_approve{
+	display:block;
+	}
+.ow_about_me_widget{
+	padding:5px 4px 10px;overflow:hidden;
+	}
+.ow_edit_profile_link{
+	position:absolute;right:0px;top:0px;
+	}
+.ow_wink_icon{
+	background-image:url(http://www.webhenho.com/ow_static/plugins/winks/images/ic_wink.png);
+	display:inline-block;
+	height:13px;
+	width:13px;
+	margin:0 0 0 6px;
+	vertical-align:text-bottom;
+	}
+.wink_btn_box{
+	height:15px;
+	}
+html div.ow_console_list_wrapper{
+	min-height:0px;
+	max-height:257px;
+	}
+.ow_mship_widget_block{
+	line-height:16px;
+	}
+.ow_mship_widget_benefits ul{
+	margin-bottom:0px;
+	}
+.ow_mship_widget_more{
+	padding-left:16px;
+	}
+.contactimporter_provider_button{
+	margin:3px;
+	display:inline-block;
+	cursor:pointer;
+	}
+.contactimporter_provider_button img{
+	width:40px;
+}

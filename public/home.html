@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soulmate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="ism/css/my-slider.css"/>
+  <script src="ism/js/ism-2.2.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button id="toggle-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="brand">SOUL</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <button type="button" class="btn btn-default navbar-btn" onclick="location.href = 'sign_up.html';">Join Us </button>
+            <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal" onclick="location.href = 'sign_in.html';">Sign In</button>
+
+            <!-- Sign  In Modal -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="banner">
+      <img class="img-responsive" src="img/banner2.jpg" alt="banner photo" style="width:100%; " >
+      <div id="slogan" class="hidden-xs">
+        <h4>Your soulmate is waiting for you </h4>
+        <h4>Register for Free</h4>
+      </div>
+
+
+      <a href="#" data-modal-skin="modal-gsearch" data-toggle="modal" class="signup-btn btn btn-default btn-lg" data-target="#modalSearch"><i class="fa fa-search" style=""></i> Start Searching</a>
+      <!--  modalSearch  -->
+      <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="false" id="modalSearch">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+              <h5 class="modal-title" style="text-align: center; text-transform: capitalize; color: #E53935; font-weight:600; font-size: 18px;">These awesome souls are waiting for you</h5>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <form method="post" action="quick_browse.html" accept-charset="UTF-8" role="form" class="form-horizontal" id="searchform">
+                  <div class="form-group"><label for="gender" class="control-label col-sm-3 col-md-3">I am seeking a</label><div class="col-sm-8 col-md-7"><select class="form-control" id="gender" name="gender"><option value="male">Man</option><option value="female">Woman</option></select></div></div>
+
+                  <div class="row form-group">
+                    <label class="control-label col-sm-3">Between ages:</label>
+                    <div class="col-sm-3">
+                      <select class="form-control" name="lo_age"><option value=""> - </option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25" selected="selected">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option></select>
+                    </div>
+                    <div class="col-sm-1"><label class="mart5">and</label></div>
+                    <div class="col-sm-3">
+                      <select class="form-control" name="hi_age"><option value=""> - </option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35" selected="selected">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option></select>
+                    </div>
+                  </div>
+
+                  <div class="form-group ">
+                    <label for="geostring" class="control-label col-sm-3 col-md-3">Near:</label>
+                    <div class="col-sm-8 col-md-7"><input id="geostring" autocomplete="off" class="form-control" name="geostring" type="text" value="Hanoi, Vietnam" placeholder="Enter a location">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-default center-block" >Start Your Search</button>
+                  </div>
+                </form>
+              </div>
+            </div><!--  end of modal body -->
+
+            <div class="modal-footer">
+              <h5 style="text-align: center; text-transform: capitalize; color: #E53935; font-weight:600; font-size: 18px; margin:0;">Register for Free</h5>
+            </div>
+
+          </div> <!-- end of modal content -->
+
+        </div> <!-- end of modal dialog -->
+
+      </div> <!-- end of modal -->
+    </div>
+
+  </header>
+
+  <div class="row" id="how-we-work">
+    <h3 class="center">How Does Soul Work?</h3>
+    <div class="col-xs-12 col-sm-4 ">
+      <i class="fa fa-sign-in" aria-hidden="true"></i>
+      <h5 class="center">Join Us for Free</h5>
+    </div>
+    <div class="col-xs-12 col-sm-4 ">
+      <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+      <h5 class="center">Complete Our Matching Quiz</h5>
+    </div>
+    <div class="col-xs-12 col-sm-4 ">
+      <i class="fa fa-comments-o" aria-hidden="true"></i>
+      <h5 class="center">Browse Matches and Connect</h5>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" id="success-container">
+    <div class="col-md-6 col-sm-12 text-center success-stories-title">
+
+      <h3>Success Stories <i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i></h3>
+      <p>See how our users found each other thanks to Soul</p>
+      <p>Thousands of lonely souls have founded each other here. We have a matching system so that you will meet truly suitable friends.</p>
+
+    </div>
+    <div id="success-carousel" class="col-md-6 col-sm-12 carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#success-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#success-carousel" data-slide-to="1"></li>
+        <li data-target="#success-carousel" data-slide-to="2"></li>
+        <li data-target="#success-carousel" data-slide-to="3"></li>
+        <li data-target="#success-carousel" data-slide-to="4"></li>
+        <li data-target="#success-carousel" data-slide-to="5"></li>
+        <li data-target="#success-carousel" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/success-stories.png" class="img-responsive pull-right">
+        </div>
+        <div class="item">
+          <img src="img/success-stories1.png" class="img-responsive pull-right">
+        </div>
+        <div class="item">
+          <img src="img/success-stories2.png" class="img-responsive pull-right">
+        </div>
+        <div class="item">
+          <img src="img/success-stories3.png" class="img-responsive pull-right">
+        </div>
+        <div class="item">
+          <img src="img/success-stories4.png" class="img-responsive pull-right">
+        </div>
+        <div class="item">
+          <img src="img/success-stories5.png" class="img-responsive pull-right">
+        </div>
+        <div class="item">
+          <img src="img/success-stories6.png" class="img-responsive pull-right">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="press-logo">
+    <p>As featured in</p>
+    <img src="the_guardian.png" alt="the guardian logo">
+    <img src="bbc-logo.png" alt="BBC logo">
+    <img src="huffington-post-logo.png" alt="the huffington post logo">
+    <img src="cosmopolitan-logo.png" alt="cosmopolitan magazine logo">
+
+  </div>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class ="thumbnail">
+              <a href="blog.html"><img class="img-responsive" src="img/online-dating.jpg" alt="online dating" title="online dating"/></a> <!-- add blog link -->
+              <div class="caption">
+                <h3><a href="blog.html" class="home-caption">Latest from the blog</a></h3> <!-- add blog link -->
+                <h4><a href="blog.html" class="home-caption">The Realities of Online Dating</a></h4>
+                <p><a href="blog.html" class="btn btn-default" role="button">Continue reading</a></p>
+              </div>
+
+            </div></div>
+            <div class="hidden-xs col-md-6" style="margin-top: 5px;">
+                <div class="ism-slider hidden-xs" data-transition_type="fade" data-play_type="loop" data-radios="false" data-radio_type="thumbnail" id="quote-slider">
+                  <ol>
+                    <li>
+                      <img src="ism/image/slides/_u/1481254700510_261925.jpg">
+                    </li>
+                    <li>
+                      <img src="ism/image/slides/_u/1481254924749_155641.jpg">
+                    </li>
+                    <li>
+                      <img src="ism/image/slides/_u/1481254999860_553897.jpg">
+                    </li>
+                    <li>
+                      <img src="ism/image/slides/_u/1481255066895_888316.jpg">
+                    </li>
+                    <li>
+                      <img src="ism/image/slides/_u/1481255128487_255292.jpg">
+                    </li>
+                  </ol>
+                </div>
+
+              </div>
+
+          </div> <!-- end of class row -->
+
+          </section>
+
+
+
+
+
+        <footer class="footer-distributed container-fluid">
+          <div class="footer-right">
+            <p>Follow us on:</p>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="footer-left">
+
+            <p class="footer-links">
+              <a href="home.html">Home</a>
+              ·
+              <a href="blog.html">Blog</a>
+              ·
+              <a href="#">About</a>
+              ·
+              <a href="#">FAQ</a>
+              ·
+              <a href="#">Contact</a>
+            </p>
+            <p>SOUL Co. &copy; 2016</p>
+          </div>
+        </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>tin nhắn</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.woff">
+   <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.ttf">
+   <link rel="stylesheet" type="text/css" href="webhenho1/css/trang_chinh.css">
+   <link rel="stylesheet" type="text/css" href="webhenho1/css/trang_chinh1.css">
+   <link rel="stylesheet" type="text/css" href="webhenho1/css/trang_chinh2.css">
+   <link rel="stylesheet" type="text/css" href="webhenho1/css/tin_nhan.css">
+   <link rel="stylesheet" type="text/css" href="webhenho1/css/tim_nhanh.css">
+
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("p").toggle();
+       });
+     });
+  </script>
+
+
+</head>
+<body>
+ <header class="container-fluid">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" id="brand" href="home.html">SOUL</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav">
+         <li><a href="browse_matches.html">Browse Matches</a></li>
+         <li><a href="#">Matching Quiz</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>News Feed</a></li>
+         <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Messages</a></li>
+         <li><a href="user_profile.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+         <li><a href="user_profile.html"><img src="img/profile.jpg" class="img-circle img-responsive" alt="" style="width: 35px;"></a></li>
+      </ul>
+   </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+</header>
+
+<div class="main_section">
+   <div class="container" style="padding-top: 100px;">
+      <div class="chat_container">
+         <div class="col-sm-3 chat_sidebar">
+            <div class="row">
+               <div id="custom-search-input">
+                  <div class="input-group col-md-12">
+                     <input type="text" class="  search-query form-control" placeholder="Tìm kiếm" />
+                     <button class="btn btn-danger" type="button">
+                        <span class=" glyphicon glyphicon-search"></span>
+                     </button>
+                  </div>
+               </div>
+               <div class="dropdown all_conversation">
+                  <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-weixin" aria-hidden="true"></i>
+                     Tất cả tin nhắn(7)
+                     <span class="caret pull-right"></span>
+                  </button>
+
+               </div>
+               <div class="member_list">
+                  <ul class="list-unstyled">
+                     <li class="left clearfix"  style="background-color: #428bca;">
+                        <span class="chat-img pull-left">
+                           <img src="img/user2.jpg" alt="User Avatar" class="img-circle" >
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;">Vũ kim ngân</strong> <strong class="pull-right" style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;"><img src="img/nhay.png"></strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                           <img src="img/linh.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;">Linh nguyễn</strong> <strong class="pull-right " style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;">mai về quê nhé chị</strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                           <img src="img/thuy.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;">Thu thủy</strong> <strong class="pull-right" style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;">văn phòng khoa ở đây thế?</strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                           <img src="img/gau.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;">Gấu</strong> <strong class="pull-right" style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;">hi</strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                           <img src="img/heo.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;">Heo bướng bỉnh</strong> <strong class="pull-right" style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;">oke</strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                           <img src="img/khoaiha.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;">Khoai hà</strong> <strong class="pull-right" style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;">công ty thời trang</strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img pull-left">
+                           <img src="img/dat.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header_sec">
+                              <strong class="primary-font" style="font-size: 16px;"">Đạt gà</strong> <strong class="pull-right" style="font-size: 10px;">
+                              09:45AM</strong>
+                           </div>
+                           <div class="contact_sec">
+                              <strong class="primary-font" style="font-size: 12px;">14 Nguyễn đình chiểu</strong> <span class="badge pull-right">3</span>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div></div>
+            </div>
+            <!--chat_sidebar-->
+
+
+            <div class="col-sm-9 message_section">
+               <div class="row">
+                  <div class="new_message_head">
+                     <div class="pull-left">
+                        <button style="font-size: 16px;"><i class="fa fa-plus-square-o" aria-hidden="true" ></i> Vũ kim ngân</button>
+                     </div>
+                     <div class="pull-right">
+                        <a href="#"><i class="fa fa-video-camera"></i></a>
+                     </div>
+                  </div>
+
+               </div><!--new_message_head-->
+
+               <div class="chat_area">
+                  <ul class="list-unstyled">
+                     <li class="left clearfix">
+                        <span class="chat-img1 pull-left">
+                           <img src="img/user2.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body1 clearfix">
+                           <p>Đang làm gì thế?</p>
+                           <div class="chat_time pull-right">09:40PM</div>
+                        </div>
+                     </li>
+
+
+                     <li class="left clearfix admin_chat">
+                        <span class="chat-img1 pull-right">
+                           <img src="img/user3.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body1 clearfix">
+                           <p>Đang đọc truyện.<emoji class="books"/></p>
+
+                           <div class="chat_time pull-left">09:40PM</div>
+                        </div>
+                     </li>
+
+                     <li class="left clearfix">
+                        <span class="chat-img1 pull-left">
+                           <img src="img/user2.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body1 clearfix">
+                           <p>Dở zời à,trời nay có mưa đâu nhể :p . đi chơi không?</p>
+                           <div class="chat_time pull-right">09:40PM</div>
+                        </div>
+                     </li>
+
+                     <li class="left clearfix admin_chat">
+                        <span class="chat-img1 pull-right">
+                           <img src="img/user3.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body1 clearfix">
+                           <p>ờ ờ, tưởng gì chứ đi chơi đi ăn thì lắm. Đi chơi đâu thế, hay đi  bigC ăn đùi gà rán và ăn kem nhé. <br>Lâu lắm rồi chưa được đi giải ngố.<br>Gọi bọn tiểu yêu kia nữa rồi cùng đi.hiha</p>
+
+                           <div class="chat_time pull-left">09:40PM</div>
+                        </div>
+                     </li>
+                     <li class="left clearfix">
+                        <span class="chat-img1 pull-left">
+                           <img src="img/user2.jpg" alt="User Avatar" class="img-circle">
+                        </span>
+                        <div class="chat-body1 clearfix">
+                           <img src="img/like.png"><br>
+                           <img src="img/nhay.png">
+                           <div class="chat_time pull-right">09:40PM</div>
+                        </div>
+                     </li>
+
+
+
+
+
+                  </ul>
+               </div><!--chat_area-->
+               <div class="message_write">
+                  <textarea class="form-control" placeholder="Viết trả lời..."></textarea>
+                  <div class="clearfix"></div><br>
+
+                  <a href="#" class="pull-right btn btn-success">Gửi</a>
+               </div>
+
+            </div>
+         </div>
+      </div> <!--message_section-->
+   </div>
+</div>
+</div>
+
+<footer class="footer-distributed container-fluid">
+ <div class="footer-right">
+  <p>Follow us on:</p>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+</div>
+<div class="footer-left">
+
+  <p class="footer-links">
+   <a href="home.html">Home</a>
+   ·
+   <a href="blog.html">Blog</a>
+   ·
+   <a href="#">About</a>
+   ·
+   <a href="#">FAQ</a>
+   ·
+   <a href="#">Contact</a>
+</p>
+<p>SOUL Co. &copy; 2016</p>
+</div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
